@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="rejestracja.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+            <Label
+                Text="Rejestruj konto"
+                BackgroundColor="Teal"
+                TextColor="White"
+                FontSize="Large"
+              />
+
+            <Label Text="Podaj email" />
+            <Entry
+                x:Name="EmailEntry"
+                Placeholder="Podaj email"
+                Keyboard="Email" />
+
+            <Label Text="Podaj haslo" />
+            <Entry
+                x:Name="PasswordEntry"
+                Placeholder="haslo"
+                IsPassword="True" />
+
+            <Label Text="Powtorz haslo" />
+            <Entry
+                x:Name="ConfirmPasswordEntry"
+                Placeholder="haslo"
+                IsPassword="True" />
+
+            <Button
+                
+                Clicked="OnCounterClicked"
+                BackgroundColor="Gray"
+                MaximumWidthRequest="150"
+                MaximumHeightRequest="100"
+                FontSize="Medium"
+                TextColor="Black"
+                Text="Zatwierdz" 
+                HorizontalOptions="Fill" />
+            
+                <Label Text="" 
+                    x:Name="result"
+                         HorizontalOptions="Center" 
+           VerticalOptions="Center"/>
+           
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
